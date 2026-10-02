@@ -6,13 +6,13 @@ Streamlit review-queue app backed by the trained Random Forest model.
 
 From the project root (`D:\Amdari\Project_finlora`), in your VS Code terminal:
 
-```powershell
+
 # 1. (recommended) activate your virtual environment first, then:
 pip install -r requirements.txt
 
 # 2. train and save the model artefacts into Model\
 python Model\train_and_save_model.py
-```
+
 
 That writes three files into `Model\`:
 - `fraud_rf_model.joblib`   — the trained Random Forest
@@ -21,9 +21,8 @@ That writes three files into `Model\`:
 
 ## Run the app
 
-```powershell
 streamlit run App\fraud_review_app.py
-```
+
 
 It opens in your browser at http://localhost:8501.
 
@@ -38,7 +37,7 @@ It opens in your browser at http://localhost:8501.
 
 ## Directory layout
 
-```
+
 Project_finlora\
 ├── Data\
 │   ├── Raw\           finlora_accounts.csv, finlora_transactions.csv
@@ -46,4 +45,4 @@ Project_finlora\
 ├── Model\             train_and_save_model.py + saved .joblib artefacts
 ├── Notebook\          01_fraud_detection.ipynb
 └── App\               fraud_review_app.py, README.md
-```
+
